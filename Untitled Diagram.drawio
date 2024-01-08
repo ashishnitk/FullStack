@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" modified="2024-01-08T17:17:45.204Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="cqYAY4r94vqfYZeJQZap" version="22.1.17" type="github">
+  <diagram name="Page-1" id="A8ZzEPnlUn9DHBs4aqdl">
+    <mxGraphModel dx="1386" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OXsPdFXhWawU75_hRZat-1" value="gp/chats?&amp;lt;&amp;lt;token&amp;gt;&amp;gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.web_page;" vertex="1" parent="1">
+          <mxGeometry x="395" y="220" width="50" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-3" value="Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-4" value="Custom Token" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-1" target="OXsPdFXhWawU75_hRZat-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="125" y="524" as="sourcePoint" />
+            <mxPoint x="285" y="524" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-9" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-5" target="OXsPdFXhWawU75_hRZat-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="374" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-11" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="635" y="484" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-5" value="Is token valid?&lt;br&gt;(duration &amp;amp; email)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="333.75" y="404" width="172.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-6" target="OXsPdFXhWawU75_hRZat-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-6" value="Check-in mail" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="222" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-10" target="OXsPdFXhWawU75_hRZat-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="604" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-10" value="Notify Host" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="434" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-15" value="Button to notify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="OXsPdFXhWawU75_hRZat-10">
+          <mxGeometry x="15" y="48" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-12" value="Error Page" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="434" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-13" value="CosmosDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="486" y="679" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-18" value="Get Conversation Id by visitId" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;width=18;startSize=4.78;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-24" target="OXsPdFXhWawU75_hRZat-13">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="328.5" y="704" as="sourcePoint" />
+            <mxPoint x="378.5" y="604" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-21" value="Meeting &lt;br&gt;Host" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="864" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-22" value="Meeting time Expired" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="482" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-30" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.472;entryY=-0.051;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-24" target="OXsPdFXhWawU75_hRZat-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="278.2758620689656" y="864" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-32" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.437;entryY=0.037;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OXsPdFXhWawU75_hRZat-24" target="OXsPdFXhWawU75_hRZat-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-24" value="Is Conversation Id found?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="664" width="135" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-25" value="Note" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="970" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-26" value="Custom token to be passed in page URL to validate user and meeting duration." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="OXsPdFXhWawU75_hRZat-25">
+          <mxGeometry y="30" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-27" value="Conversation Id is generated only when the App is installed for Meeting Host" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="OXsPdFXhWawU75_hRZat-25">
+          <mxGeometry y="60" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-28" value="Check-in mail contains the pointer to guestportal/chats" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="OXsPdFXhWawU75_hRZat-25">
+          <mxGeometry y="90" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-34" value="Team&#39;s proactive &lt;br&gt;notification" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-logos/24/bxl-microsoft-teams-128.png" vertex="1" parent="1">
+          <mxGeometry x="83.5" y="880" width="76" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-36" value="Mail and Give a direction &lt;br&gt;to install Team&#39;s app" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/picons-social/57/57-outlook-2-128.png" vertex="1" parent="1">
+          <mxGeometry x="246.5" y="880" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-38" value="&lt;b&gt;&lt;font style=&quot;font-size: 23px;&quot;&gt;No Host Design for Security review&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="216.5" y="50" width="407" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OXsPdFXhWawU75_hRZat-40" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;ConversationId to alias mapping to be saved in DB when Meetinghost installs the app&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="690" width="140" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
